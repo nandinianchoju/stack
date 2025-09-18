@@ -1,0 +1,27 @@
+class stack
+ def __init__(self):
+   self.arr=[]
+ def isempty(self):
+   if len(self.arr)==0:
+     return True
+   else:
+     return False
+ def append_value(self,num):
+   self.arr.append(num)
+ def pop_value(self):
+   if self.isempty():
+     print("no elements to pop")
+   else:
+     self.arr.pop()
+ def print_stack(self):
+   print(self.arr)
+A=stack()
+A.append_value(2)
+A.append_value(3)
+A.append_value(4)
+A.print_stack()
+A.pop_value()
+A.pop_value()
+A.print_stack()
+A.pop_value()
+A.pop_value()
